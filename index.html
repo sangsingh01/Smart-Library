@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+    <section class="intro">
+        <div class="intro-text">
+            <h1>Library Management System</h1>
+            <p>
+                This project helps manage books in a simple and organized way.
+                Users can add books, issue them, and track availability easily.
+            </p>
+            <p><strong>Library Timings:</strong> Monday to Friday: 9:00 AM - 6:00 PM</p>
+
+
+        </div>
+    </section>
+
+    
+    <section class="library" id="library">
+        <h2>Library Management</h2>
+
+        
+        <div class="form-card">
+            <input type="text" id="bookName" placeholder="Book Name">
+            <input type="text" id="authorName" placeholder="Author Name">
+            <input type="text" id="bookId" placeholder="Accession No (e.g. LIB-001)">
+            <input type="text" id="shelfLocation" placeholder="Shelf Location (e.g. R1-S2)">
+
+            <button id="addBookBtn">Add Book</button>
+        </div>
+
+
+
+
+
+
+
+        
+        <div class="table-card">
+            <h3 style="margin-bottom:10px;">Available Books</h3>
+
+          
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchAvailable" placeholder="Search available books">
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sr No</th>
+                        <th>Book</th>
+                        <th>Author</th>
+                        <th>Accession No</th>
+                        <th>Shelf</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="bookTable"></tbody>
+            </table>
+
+            <p class="issue-note">
+  Click on the “Issue” button to issue the book.
+</p>
+
+        </div>
+
+
+
+
+        
+        <div class="table-card" style="margin-top:20px;">
+            <h3 style="margin-bottom:10px;">Issued Books</h3>
+           
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchIssued" placeholder="Search issued books">
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sr No</th>
+                        <th>Book</th>
+                        <th>Author</th>
+                        <th>Accession No</th>
+                        <th>Student Name</th>
+                        <th>Mobile No</th>
+                        <th>Issued Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="issuedBookTable"></tbody>
+            </table>
+
+            <p class="issue-note">
+  Click on the “return” button to return the book.
+</p>
+        </div>
+
+        
+    </section>
+
+    
+    
+    <section id="issueSection" style="display:none; margin-top:20px;">
+        <h3>Issue Book</h3>
+
+        <label>
+            Student Name:
+            <input type="text" id="issueName">
+        </label><br><br>
+
+        <label>
+            Mobile Number:
+            <input type="text" id="issueMobile">
+        </label><br><br>
+
+        <label>
+            Issue Date:
+            <input type="date" id="issueDate">
+        </label><br><br>
+
+        <button id="confirmIssueBtn">Confirm Issue</button>
+    </section>
+
+
+<section class="notice-board">
+  <h2>📌 Library Notice Board</h2>
+
+  <div class="notice">
+    <h3>🔔 New Books Arrived</h3>
+    <p>New editions of Computer Science and AI books are now available.</p>
+    <span class="date">08 Feb 2026</span>
+  </div>
+
+  <div class="notice">
+    <h3>⏰ Library Timing Update</h3>
+    <p>Library will remain open till 9:00 PM from Monday to Friday.</p>
+    <span class="date">05 Feb 2026</span>
+  </div>
+
+  <div class="notice">
+    <h3>📚 Book Issue Rule</h3>
+    <p>Students can now issue up to 3 books for 14 days.</p>
+    <span class="date">01 Feb 2026</span>
+  </div>
+</section>
+
+
+    
+    <section class="notice-board">
+  <h2>📖 Library Rules & Regulations</h2>
+
+  <div class="notice">
+    <h3>🔕 Silence is Mandatory</h3>
+    <p>Maintain complete silence inside the library to ensure a peaceful environment.</p>
+  </div>
+
+  <div class="notice">
+    <h3>📚 Book Handling</h3>
+    <p>Books must be handled carefully. Writing or marking on books is strictly prohibited.</p>
+  </div>
+
+  <div class="notice">
+    <h3>⏳ Issue & Return Policy</h3>
+    <p>Books must be returned on or before the due date to avoid fines.</p>
+  </div>
+
+  <div class="notice">
+    <h3>🪪 ID Card Required</h3>
+    <p>Students must carry their library ID card while issuing or returning books.</p>
+  </div>
+
+  <div class="notice">
+    <h3>🚫 No Food & Drinks</h3>
+    <p>Eating or drinking inside the library is not allowed.</p>
+  </div>
+</section>
+
+<section class="mini-contacts">
+  <h3>📞 Contact</h3>
+
+  <p>
+    <strong>Librarian:</strong> Mr. A. Kumar |
+    📞 +91 98765 43210 |
+    ✉ librarian@library.com
+  </p>
+
+  <p>
+    <strong>Library Office:</strong> Main Academic Building |
+    ⏰ 9:00 AM – 9:00 PM
+  </p>
+</section>
+
+
+    <footer>
+        Made with ❤️ by Sang Singh | GLUG Task
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
